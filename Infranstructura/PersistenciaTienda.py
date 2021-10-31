@@ -129,7 +129,7 @@ class PersistenciaTienda:
         except sqlite3.OperationalError as ex:
             pass
 
-    def guardar_polvoCompacto(self, polvoCompacto: PolvoCompacto):
+    def guardar_polvoCompacto(self, polvoCompacto):
         cursor = self.con.cursor()
         query = "insert into POLVOCOMPACTO(codigo , nombre ," \
                 " marca , tonalidades ,precio ) values(" \
